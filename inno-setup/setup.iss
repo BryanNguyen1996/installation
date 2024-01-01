@@ -3,7 +3,7 @@
 
 #define MyAppName "Demo App"
 #define MyAppVersion "1.0"
-#define MyAppPublisher " VMO"
+#define MyAppPublisher "VMO"
 #define MyAppURL "https://www.vmo.com/"
 #define AppId "947715C9-EAD4-44A0-AF0D-A6F380A1088F"
 #define MariaDB "database"
@@ -40,9 +40,9 @@ WizardStyle=modern
 LicenseFile=license.txt
 
 [Messages]
-WelcomeLabel2=This will install [name/ver] on your computer.
+WelcomeLabel2=This will install {#MyAppName} ({#MyAppVersion}) on your computer.
 ClickNext=
-FinishedLabelNoIcons=Setup has finished installing [name/ver] on your computer.
+FinishedLabelNoIcons=Setup has finished installing {#MyAppName} ({#MyAppVersion}) on your computer.
 ConfirmUninstall=Are you sure you want to completely remove %1 and all of its components on this computer?
 WizardInstalling=Installing {#MyAppName} ({#MyAppVersion})
 InstallingLabel=The program features you selected are being installed.

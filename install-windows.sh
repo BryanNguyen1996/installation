@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 source ./scripts/env.sh
 
-# ./scripts/pull-code.sh
-# ./scripts/install-node-modules.sh
-
 # ----- prepare for windows -----
 # lib
 nginx=nginx-1.25.2
@@ -40,7 +37,7 @@ echo outServiceDir $outServiceDir
 
 # copy project to workspace and change name
 echo copy service $service
-echo current folder ${PWD}
+
 # create folder of repo in ouput
 mkdir -p $outServiceDir
 
@@ -48,7 +45,6 @@ npm install
 npm run build
 ncc build dist/main.js -m -o out
 
-echo ${PWD}
 # copy out folder to output folder
 mv out $outServiceDir/dist
 echo folder out $outServiceDir/dist
